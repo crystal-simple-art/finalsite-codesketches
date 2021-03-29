@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family:'adelle', serif;
+}
+
+/* Header two */
+h2 {
+font-family: 'adelle', serif;
+font-style: normal;
+font-weight: Bold;
+font-size: 30px;
+line-height: 50px;
+text-align: left;
+margin-top: 2em;
+margin-bottom: 0;
+margin-right: 10%;
+margin-left: 10%;
+word-break: normal;
+hyphens: auto;
+}
+
+
+p{
+  font-family: 'adelle', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 29px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display:block;
+  margin-block-start:1em;
+  margin-block-end:1em;
+  margin-inline-start:0px;
+  margin-inline-end: 0px;
+}
+
+.aboutcantonesecuisinetitle{
+  color: #FAFBED;
+}
+
+.about{
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin:0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #D2523C;
+}
+
+.introduction{
+  color: #FAFBED;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*******image grid*********/
+
+.imagecontainer{
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+
+h1 {
+  font-family: 'adelle', serif;
+  text-align: left;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  margin-right: 11%;
+  margin-left: 11%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 100%;
+  max-width: 100%;
+  padding:10px 10px;
+}
+
+.column img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+  width: 95%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #D2523C;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #FAFBED;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 1024px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 1440px) {
+    .column {
+      flex: 32%;
+      max-width: 32%;
+    }
+}
